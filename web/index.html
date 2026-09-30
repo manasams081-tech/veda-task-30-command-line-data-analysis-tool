@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DataLens CLI Studio — VEDA Task 30</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">DL</div>
+      <div>
+        <div class="eyebrow">VEDA TECHNOLOGY · TASK 30</div>
+        <h1>DataLens <span>CLI Studio</span></h1>
+      </div>
+    </div>
+    <div class="status"><i></i> Local analysis workspace</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="kicker">COMMAND-LINE DATA ANALYSIS TOOL</p>
+        <h2>Turn a CSV into <em>clear answers.</em></h2>
+        <p class="hero-copy">A reusable Pandas analysis engine with a friendly browser dashboard. The same logic powers both the CLI and this web interface.</p>
+      </div>
+      <div class="hero-card">
+        <div class="mini-label">ACTIVE DATASET</div>
+        <strong>sales.csv</strong>
+        <span>Sample dataset · ready to analyze</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <aside class="panel controls">
+        <div class="panel-head">
+          <div>
+            <p class="kicker">ANALYSIS COMMAND</p>
+            <h3>Choose an operation</h3>
+          </div>
+          <span class="chip">Pandas</span>
+        </div>
+
+        <label>Dataset
+          <select id="file">
+            <option value="sample_data/sales.csv">sample_data/sales.csv</option>
+          </select>
+        </label>
+
+        <div class="operation-list">
+          <button class="op active" data-action="summary"><b>01</b><span><strong>Summary</strong><small>Shape, columns & missing values</small></span></button>
+          <button class="op" data-action="preview"><b>02</b><span><strong>Preview</strong><small>Inspect the first rows</small></span></button>
+          <button class="op" data-action="filter"><b>03</b><span><strong>Filter</strong><small>Find matching records</small></span></button>
+          <button class="op" data-action="group"><b>04</b><span><strong>Group</strong><small>Aggregate by a category</small></span></button>
+          <button class="op" data-action="stats"><b>05</b><span><strong>Statistics</strong><small>Numeric descriptive report</small></span></button>
+        </div>
+
+        <div id="extra" class="extra"></div>
+        <button id="run" class="run">Run analysis <span>→</span></button>
+      </aside>
+
+      <section class="panel results">
+        <div class="panel-head">
+          <div>
+            <p class="kicker">LIVE OUTPUT</p>
+            <h3 id="resultTitle">Dataset summary</h3>
+          </div>
+          <span id="time" class="muted">Ready</span>
+        </div>
+        <div id="cards" class="cards"></div>
+        <div id="tableWrap" class="table-wrap"></div>
+        <pre id="raw" class="raw"></pre>
+      </section>
+    </section>
+
+    <section class="command-strip">
+      <div>
+        <span class="kicker">CLI EQUIVALENT</span>
+        <code id="command">python cli_tool.py --file sample_data/sales.csv --summary</code>
+      </div>
+      <button id="copy">Copy command</button>
+    </section>
+
+    <section class="notes">
+      <div><b>01</b><span>Dataset filename is passed as an argument — nothing is hardcoded into the CLI.</span></div>
+      <div><b>02</b><span>Column validation gives a clear error instead of failing with a traceback.</span></div>
+      <div><b>03</b><span>Analysis functions are reusable across the CLI and web interface.</span></div>
+    </section>
+  </main>
+  <footer>Built for VEDA Technology Internship · Python + Pandas + argparse</footer>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "task": "VEDA Technology Task 30",
+  "title": "Build a Command-Line Data Analysis Tool",
+  "core_tools": [
+    "Python",
+    "Pandas",
+    "argparse"
+  ],
+  "web_server": "Python standard-library http.server",
+  "entry_points": {
+    "cli": "cli_tool.py",
+    "web": "app.py"
+  }
+}

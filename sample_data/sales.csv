@@ -1,0 +1,21 @@
+date,region,product,units,sales,customer_type
+2026-09-01,South,Running Shoes,14,42000,Member
+2026-09-02,North,Training Mat,22,17600,Guest
+2026-09-03,West,Dumbbells,18,23400,Member
+2026-09-04,South,Yoga Mat,31,24800,Member
+2026-09-05,East,Resistance Band,40,16000,Guest
+2026-09-06,North,Running Shoes,11,33000,Member
+2026-09-07,West,Training Mat,19,15200,Guest
+2026-09-08,South,Dumbbells,25,32500,Member
+2026-09-09,East,Yoga Mat,17,13600,Member
+2026-09-10,North,Resistance Band,35,14000,Guest
+2026-09-11,West,Running Shoes,16,48000,Member
+2026-09-12,South,Training Mat,27,21600,Guest
+2026-09-13,East,Dumbbells,13,16900,Member
+2026-09-14,North,Yoga Mat,24,19200,Guest
+2026-09-15,West,Resistance Band,29,11600,Member
+2026-09-16,South,Running Shoes,12,36000,Guest
+2026-09-17,East,Training Mat,21,16800,Member
+2026-09-18,North,Dumbbells,20,26000,Member
+2026-09-19,West,Yoga Mat,23,18400,Guest
+2026-09-20,South,Resistance Band,38,15200,Member
